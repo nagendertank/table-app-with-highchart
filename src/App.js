@@ -85,11 +85,13 @@ function App() {
       {
         Header: 'Status',
         accessor: 'status',
+        width:150
       },
       {
         Header: 'Profile Progress',
         accessor: 'progress',
-        Cell:HighChartComponent
+        Cell:HighChartComponent,
+        width:150
       },
     ],
     []

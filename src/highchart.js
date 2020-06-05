@@ -16,19 +16,21 @@ export default class HighchartsComponent extends React.PureComponent {
       chartOptions: {
         chart: {
             type: 'columnrange',
-            inverted: true
+            inverted: true,
+            height:"100px"
         },
         title: {
             text: ''
         },
         xAxis: {
+            visible:false,
             labels: {
                 enabled: false
             }
         },
 
         yAxis: {
-
+            visible:false,
             labels: {
                 enabled: false
             }
@@ -43,6 +45,7 @@ export default class HighchartsComponent extends React.PureComponent {
         },
     
         series: [{
+            showInLegend: false,
             data: [
                props.value
             ]
